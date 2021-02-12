@@ -1,3 +1,8 @@
+:root {
+  --mainColor: rgba(73, 51, 35, 0.85);
+  --mainTextColor: rgb(252, 245, 214);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -33,19 +38,22 @@ code {
 /* #################### */
 
 .header {
-  height: 35vh;
+  height: 30vh;
   width: 100%;
-  background-color: #222;
+  /* background-color: #222; */
+  /* background-color: #ba8b57; */
+  background-color: var(--mainColor);
+  /* opacity: 0.8; */
   display: grid;
   place-items: center;
-  border-bottom-left-radius: 200px;
-  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 160px;
+  border-top-right-radius: 160px;
   max-height: 400px;
 }
 
 .header-text {
   font-size: 5rem;
-  color: rgb(252, 245, 214);
+  color: var(--mainTextColor);
   font-weight: 700;
   font-family: monospace;
   letter-spacing: 6px !important;
@@ -110,13 +118,14 @@ code {
 
 .heading-text {
   font-size: 3rem;
-  color: #222;
+  /* color: #222; */
+  color: var(--mainColor);
   font-family: "Courier New", Courier, monospace;
   font-weight: 900;
 }
 
 .heading-hr {
-  border: 2px solid #222;
+  border: 2px solid var(--mainColor);
   border-radius: 40%;
   width: 25%;
   margin: 0 auto;
@@ -126,9 +135,10 @@ code {
   /* For mobile phones: */
 
   .header {
-    height: 25vh;
+    height: 23vh;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    border-top-right-radius: 0px;
   }
 
   .header-text {
@@ -173,7 +183,8 @@ code {
 .footer {
   height: 20vh;
   width: 100%;
-  background-color: #222;
+  /* background-color: #222; */
+  background-color: var(--mainColor);
   display: grid;
   place-items: center;
   max-height: 400px;
@@ -182,7 +193,7 @@ code {
 
 .footer-text {
   font-size: 1.35rem;
-  color: #27ffbf;
+  color: var(--mainTextColor);
   font-weight: 500;
   font-family: monospace;
   letter-spacing: 0px;

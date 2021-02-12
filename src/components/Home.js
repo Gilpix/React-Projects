@@ -8,7 +8,9 @@ import { projectsData } from ".././projectsData";
 
 
 function Home() {
-    document.body.style = 'background: #faf5dc'
+    // document.body.style = 'background: #f7efc5'
+    document.body.style = 'background: #E3CC9F'
+
 
     // const [project, setProject] = React.useState('hhhh');
 
