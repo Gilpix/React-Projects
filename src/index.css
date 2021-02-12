@@ -1,13 +1,268 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  min-width: 100%;
+  min-height: 100%;
+  /* background-color: rgba(3, 229, 245, 0.1); */
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.transition {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0.03s;
+}
+
+/* #################### */
+/* Home Page */
+/* #################### */
+
+.header {
+  height: 35vh;
+  width: 100%;
+  background-color: #222;
+  display: grid;
+  place-items: center;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  max-height: 400px;
+}
+
+.header-text {
+  font-size: 5rem;
+  color: rgb(252, 245, 214);
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 6px !important;
+}
+
+.big-letter {
+  font-size: 5.5rem;
+}
+
+.letter-anim {
+  text-transform: uppercase;
+}
+
+.letter-anim:hover {
+  text-shadow: 0px -40px 0px rgb(252, 249, 217);
+  color: transparent;
+}
+
+.project-size {
+  padding: 5px;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-delay: 0.05s;
+}
+.project-size:hover {
+  padding: 5px;
+}
+.project-block {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(119, 124, 124, 0.05);
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  margin: 10px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-delay: 0.05s;
+  border-radius: 45px;
+  overflow: hidden;
+  /* border: 1px solid transparent; */
+}
+
+.project-block:hover {
+  /* box-shadow: 0px 0px 20px #138f6a; */
+  box-shadow: 0px 0px 15px rgba(46, 49, 49, 0.3);
+  /* border: 1px solid rgba(151, 172, 172, 0.9); */
+  border-top: 2px solid rgba(151, 145, 76, 0.9);
+  border-bottom: 2px solid rgba(151, 145, 76, 0.9);
+  /* border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px; */
+  /* border-radius: 45px; */
+
+  /* margin: 10px 8px; */
+}
+
+.pro-image {
+  max-height: 300px;
+  min-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.heading-text {
+  font-size: 3rem;
+  color: #222;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+}
+
+.heading-hr {
+  border: 2px solid #222;
+  border-radius: 40%;
+  width: 25%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .header {
+    height: 25vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .header-text {
+    font-size: 2.7rem;
+    line-height: 2.5rem;
+  }
+
+  .letter-anim:hover {
+    text-shadow: 0px -20px 0px rgb(250, 240, 195);
+    color: transparent;
+  }
+
+  .big-letter {
+    font-size: 3.5rem;
+  }
+
+  .project-block {
+    margin: 10px;
+  }
+
+  .pro-image {
+    max-height: 270px;
+    min-height: 270px;
+  }
+
+  .heading-text {
+    font-size: 1.7rem;
+    color: #222;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+  }
+
+  .heading-hr {
+    border-radius: 40%;
+    width: 50%;
+  }
+}
+/* #################### */
+/* FOOTER */
+/* #################### */
+
+.footer {
+  height: 20vh;
+  width: 100%;
+  background-color: #222;
+  display: grid;
+  place-items: center;
+  max-height: 400px;
+  margin-top: 100px;
+}
+
+.footer-text {
+  font-size: 1.35rem;
+  color: #27ffbf;
+  font-weight: 500;
+  font-family: monospace;
+  letter-spacing: 0px;
+  word-spacing: -3px;
+}
+
+/* #################### */
+/* BIRTHDAY REMIDER CSS */
+/* #################### */
+
+/* .heading {
+  color: rgb(190, 147, 68);
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+} */
+
+.birthday-section {
+  margin: 50px auto;
+  padding: 10px;
+  background-color: white;
+  /* min-width: 50%; */
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgb(121, 89, 30);
+  color: rgb(204, 173, 116);
+}
+
+.user-sec {
+  margin: 25px 5px;
+  width: 100%;
+}
+.user-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.user-img-div {
+  height: 70px;
+  width: 70px;
+  /* max-width: 80px; */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* #################### */
+/* GITHUB USERS CSS */
+/* #################### */
+
+.item {
+  background-color: white;
+  padding: 5px 10px;
+  /* border-radius: 55px; */
+  border-top-left-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  color: #677467;
+  text-align: left;
+  min-height: 72px;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  display: grid;
+  vertical-align: center;
+}
+
+.item a {
+  color: #a8aea8;
+  font-size: 0.85rem;
+}
+.item a:hover {
+  color: #677467;
+  text-decoration: underline;
 }
