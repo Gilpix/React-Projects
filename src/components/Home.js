@@ -19,12 +19,14 @@ function Home() {
         <div>
             <div className='header'>
                 <h1 className='header-text'>
+                    {/* <i className="fa fa-spinner fa-spin fa-xs "></i> */}
                     <span className='letter-anim transition big-letter'>R</span>
                     <span className='letter-anim transition'>e</span>
                     <span className='letter-anim transition'>a</span>
                     <span className='letter-anim transition'>c</span>
                     <span className='letter-anim transition'>t</span>
                     <span> </span>
+
 
                     <span className='letter-anim transition big-letter'>P</span>
                     <span className='letter-anim transition'>r</span>
@@ -34,7 +36,7 @@ function Home() {
                     <span className='letter-anim transition'>c</span>
                     <span className='letter-anim transition'>t</span>
                     <span className='letter-anim transition'>s</span>
-                    {/* <i className="fa fa-spinner fa-spin">K</i> */}
+
 
 
 
