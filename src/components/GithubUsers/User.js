@@ -55,7 +55,7 @@ function User(props) {
                             return (
                                 <div key={id} className='col-12 col-md-6 col-lg-4 '>
                                     <div className='item m-2'>
-                                        <img src={avatar_url}></img>
+                                        <img src={avatar_url} alt=''></img>
                                         <div className='ml-5 mt-1 pl-4'>
                                             <p className="h5 mb-0 w-50" style={{ textTransform: "capitalize" }} >{login}</p>
                                             <a href={html_url}>Check Profile</a>

@@ -311,3 +311,111 @@ code {
   color: #677467;
   text-decoration: underline;
 }
+
+/* #################### */
+/* Subscription USERS CSS */
+/* #################### */
+
+/* .hide {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-delay: 0.3s;
+  display: none;
+}
+
+.show {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-delay: 0.3s;
+  display: block;
+} */
+
+.text-subscribe {
+  color: #c2d5e3;
+  font-size: xx-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+.text-subscribe-small {
+  color: #ddeefa;
+  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-weight: 450; */
+  letter-spacing: 0.5px;
+}
+
+.want-to-subscribe {
+  color: white;
+  background-color: #476f8d;
+  padding: 8px 26px;
+  outline: transparent !important;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.want-to-subscribe:hover {
+  color: rgba(104, 151, 187, 1);
+  background-color: #3b586e;
+  padding: 8px 26px;
+  outline: transparent;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* FORM */
+
+.subscribe-form {
+  background-color: #5786aa;
+  padding: 10px;
+  border-radius: 35px;
+  text-align: center;
+}
+.subscribe-form input {
+  color: rgba(104, 151, 187, 1);
+  outline: transparent !important;
+  border: transparent;
+  padding: 6px 12px;
+  border-radius: 50px;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
+}
+
+.modal-text-big {
+  color: #ebf4fc;
+  font-size: 2.3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 550;
+  letter-spacing: 1px;
+  line-height: xx-large;
+  /* text-transform: uppercase; */
+}
+
+.close {
+  color: white;
+  font-size: xx-large;
+}
+
+.subscription-user-block {
+  background-color: white;
+  padding: 5px 10px;
+
+  border-radius: 5px;
+  color: #677467;
+  text-align: left;
+  min-height: 72px;
+}
+
+.sub-user-text {
+  color: #3b586e;
+  font-size: 1.1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: xx-large;
+}

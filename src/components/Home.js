@@ -45,9 +45,9 @@ function Home() {
                 <div className="social-icons-div">
                     <div style={{ margin: '0 auto' }}>
                         <i className="fa fa-lg fa-github social-icons"></i>
-                        <i class="fa fa-lg fa-instagram social-icons"></i>
-                        <i class="fa fa-lg fa-linkedin social-icons"></i>
-                        <i class="fa fa-lg fa-code social-icons"></i>
+                        <i className="fa fa-lg fa-instagram social-icons"></i>
+                        <i className="fa fa-lg fa-linkedin social-icons"></i>
+                        <i className="fa fa-lg fa-code social-icons"></i>
                     </div>
 
                 </div>
