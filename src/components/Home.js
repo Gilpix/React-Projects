@@ -73,10 +73,11 @@ function Home() {
                                     }
                                 }}>
                                     <div className='project-block' >
-                                        <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif', fontWeight: '900' }}>{name}</h5>
+                                        {/* <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif', fontWeight: '900' }}>{name}</h5> */}
                                         <img className='pro-image' src={image} alt=""></img>
+                                        <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontWeight: '650', fontSize: '1.15rem' }}>{name}</h5>
 
-                                        <h6 className='py-3 my-0' style={{ color: '#617d98', fontWeight: '700' }}>{learn}</h6>
+                                        {/* <h6 className='py-3 my-0' style={{ letterSpacing: '1px', color: '#617d98', fontWeight: '700' }}>{name}</h6> */}
                                     </div>
                                 </Link>
                             </div>

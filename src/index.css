@@ -98,34 +98,39 @@ code {
 }
 
 .project-size {
-  padding: 5px;
+  padding: 15px 5px;
   transition-property: all;
   transition-duration: 0.4s;
   transition-delay: 0.05s;
 }
 .project-size:hover {
-  padding: 5px;
+  /* padding: 5px; */
+  padding: 11px 2px;
 }
 .project-block {
   background-color: #ffffff;
   box-shadow: 0px 0px 15px rgba(119, 124, 124, 0.05);
-  border-top: 2px solid transparent;
+  /* border-top: 2px solid transparent; */
   border-bottom: 2px solid transparent;
   margin: 10px;
   transition-property: all;
   transition-duration: 0.3s;
   transition-delay: 0.05s;
-  border-radius: 45px;
+  /* border-radius: 45px; */
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   overflow: hidden;
   /* border: 1px solid transparent; */
 }
 
 .project-block:hover {
   /* box-shadow: 0px 0px 20px #138f6a; */
-  box-shadow: 0px 0px 8px rgba(73, 51, 35, 0.3);
+  box-shadow: 0px 5px 15px rgba(73, 51, 35, 0.3);
   /* border: 1px solid rgba(151, 172, 172, 0.9); */
-  border-top: 2px solid rgba(73, 51, 35, 0.7);
-  border-bottom: 2px solid rgba(73, 51, 35, 0.7);
+  /* border-top: 2px solid rgba(73, 51, 35, 0.7); */
+  /* border-bottom: 3px solid rgba(73, 51, 35, 0.7); */
   /* border-bottom-left-radius: 45px;
   border-bottom-right-radius: 45px; */
   /* border-radius: 45px; */
@@ -134,8 +139,8 @@ code {
 }
 
 .pro-image {
-  max-height: 230px;
-  min-height: 230px;
+  max-height: 210px;
+  min-height: 210px;
   width: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
