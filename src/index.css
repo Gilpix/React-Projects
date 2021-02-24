@@ -27,10 +27,45 @@ code {
   text-decoration: none;
 }
 
+/* #################### */
+/* SHARING CSS */
+/* #################### */
 .transition {
   transition-property: all;
   transition-duration: 0.2s;
   transition-delay: 0.03s;
+}
+
+.back-button {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 550;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.back-button:hover {
+  color: white;
+  text-shadow: 0 0 2px rgba(65, 63, 63, 0.5);
+
+  text-decoration: none;
+}
+.back-text {
+  font-size: 1.3rem !important;
+  color: white;
+  /* padding-bottom: 10px; */
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .back-button {
+    font-size: 1.8rem;
+    line-height: 1rem;
+  }
+  .back-text {
+    font-size: 1.2rem !important;
+  }
 }
 
 /* #################### */
@@ -165,16 +200,17 @@ code {
   /* For mobile phones: */
 
   .header {
-    height: 25vh;
+    height: 20vh;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 0px;
   }
 
   .header-text {
-    font-size: 2.7rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
     margin-bottom: 20px;
+    letter-spacing: 4px !important;
   }
 
   .letter-anim:hover {
@@ -183,7 +219,7 @@ code {
   }
 
   .big-letter {
-    font-size: 3.5rem;
+    font-size: 2.7rem;
   }
 
   .social-icons-div {
@@ -237,6 +273,13 @@ code {
   font-family: monospace;
   letter-spacing: 0.31px;
   word-spacing: -3px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .footer-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
 }
 
 /* #################### */
@@ -423,4 +466,19 @@ code {
   font-weight: 500;
   letter-spacing: 1px;
   line-height: xx-large;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .text-subscribe {
+    font-size: 1.7rem;
+
+    font-weight: 550;
+    letter-spacing: 1px;
+  }
+
+  .info-text {
+    font-size: 2.3rem !important;
+  }
 }

@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React from 'react';
 import { withRouter } from "react-router-dom";
+import Header from '../SharedComp/Header';
+
 
 
 
@@ -42,10 +44,8 @@ function User(props) {
 
     return (
         <>
-            <div className='my-5 text-center'>
-                <h1 className='heading-text' >Github Users</h1>
-                <hr className='heading-hr'></hr>
-            </div>
+            <Header heading='Github Users'></Header>
+
 
             <div className="container my-5 py-3">
                 <div className='row'>

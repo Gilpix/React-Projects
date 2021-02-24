@@ -2,6 +2,7 @@ import React from 'react'
 
 import User from './User';
 import { birthdayData } from './birthdayData';
+import Header from '../SharedComp/Header';
 
 function BirthdayReminder() {
 
@@ -24,10 +25,8 @@ function BirthdayReminder() {
 
     return (
         <>
-            <div className='my-5 text-center'>
-                <h1 className='heading-text' >Birthday Reminder</h1>
-                <hr className='heading-hr'></hr>
-            </div>
+            <Header heading='Birthday Reminder'></Header>
+
             <div >
                 <div className='container' >
 

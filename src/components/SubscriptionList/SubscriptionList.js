@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Header from '../SharedComp/Header';
+
 
 function SubscriptionList() {
     document.body.style = 'background: rgba(104,151,187, 1)';
@@ -32,6 +34,7 @@ function SubscriptionList() {
         }
 
     }
+    console.log("Render")
 
 
 
@@ -40,10 +43,9 @@ function SubscriptionList() {
 
     return (
         <>
-            <div className='my-5 text-center'>
-                <h1 className='heading-text'  >SubscriptionS</h1>
-                <hr className='heading-hr'></hr>
-            </div>
+
+
+            <Header heading='SubscriptionS'></Header>
 
             <div className="container pt-3">
                 <h5 className='text-subscribe'>Total Subscriptions : {people.length}</h5>
@@ -55,7 +57,7 @@ function SubscriptionList() {
             </div>
 
             <div className='container mt-5'>
-                <h5 className='pt-2 pb-1' style={{ color: '#3b586e', fontSize: '2.5rem', fontWeight: '700' }}>Subscribers Info</h5>
+                <h5 className='pt-2 pb-1 info-text' style={{ color: '#3b586e', fontSize: '2.5rem', fontWeight: '700' }}>Subscribers Info</h5>
                 <hr style={{ border: '.5px solid #ddeefa', marginTop: '0px' }}></hr>
                 <div className='row'>
                     {
