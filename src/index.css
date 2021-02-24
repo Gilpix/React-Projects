@@ -38,29 +38,25 @@ code {
 
 .back-button {
   color: white;
-  letter-spacing: 1px;
-  font-weight: 550;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-weight: 500;
 }
 
 .back-button:hover {
   color: white;
-  text-shadow: 0 0 2px rgba(65, 63, 63, 0.5);
-
+  text-shadow: 0 0 2px rgba(65, 63, 63, 0.7);
   text-decoration: none;
 }
 .back-text {
-  font-size: 1.3rem !important;
+  font-size: 1.1rem !important;
   color: white;
-  /* padding-bottom: 10px; */
+  padding-left: 3px;
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 
   .back-button {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     line-height: 1rem;
   }
   .back-text {

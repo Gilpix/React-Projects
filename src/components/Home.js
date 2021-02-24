@@ -1,6 +1,4 @@
 import React from 'react';
-// import 'font-awesome/css/font-awesome.min.css';
-
 import { Link, withRouter } from "react-router-dom";
 
 
