@@ -33,7 +33,7 @@ function Home() {
                 </ul>
 
                 <h1 className='header-text'>
-
+                    {/* 
                     <span className='letter-anim transition big-letter'>R</span>
                     <span className='letter-anim transition'>e</span>
                     <span className='letter-anim transition'>a</span>
@@ -49,7 +49,25 @@ function Home() {
                     <span className='letter-anim transition'>e</span>
                     <span className='letter-anim transition'>c</span>
                     <span className='letter-anim transition'>t</span>
+                    <span className='letter-anim transition'>s</span> */}
+
+
+                    <span className='letter-anim transition big-letter'>L</span>
+                    <span className='letter-anim transition'>e</span>
+                    <span className='letter-anim transition'>t</span>
+                    <span className='letter-anim transition'>'</span>
                     <span className='letter-anim transition'>s</span>
+                    <span> </span>
+
+
+                    <span className='letter-anim transition big-lette'>D</span>
+                    <span className='letter-anim transition'>o</span>
+                    <span> </span>
+
+                    <span className='letter-anim transition big-lette'>I</span>
+                    <span className='letter-anim transition'>t</span>
+                    <span className='letter-anim transition big-letter'>!</span>
+
 
 
 
