@@ -8,16 +8,32 @@ import { projectsData } from ".././projectsData";
 
 function Home() {
     // document.body.style = 'background: #f7efc5'
-    document.body.style = 'background: #E3CC9F'
+    // document.body.style = 'background: #E3CC9F'
+    document.body.style = 'background:  transparent';
+
 
 
     // const [project, setProject] = React.useState('hhhh');
 
     return (
-        <div>
-            <div className='header'>
+        <div className='basic_project_containe '>
+
+            <div className='header area'>
+                <ul className="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
                 <h1 className='header-text'>
-                    {/* <i className="fa fa-spinner fa-spin fa-xs "></i> */}
+
                     <span className='letter-anim transition big-letter'>R</span>
                     <span className='letter-anim transition'>e</span>
                     <span className='letter-anim transition'>a</span>
@@ -26,7 +42,7 @@ function Home() {
                     <span> </span>
 
 
-                    <span className='letter-anim transition big-letter'>P</span>
+                    <span className='letter-anim transition big-letter'>p</span>
                     <span className='letter-anim transition'>r</span>
                     <span className='letter-anim transition'>o</span>
                     <span className='letter-anim transition'>j</span>
@@ -51,38 +67,43 @@ function Home() {
                 </div>
             </div>
 
-            <div className='my-5 text-center'>
+            <div className='my-5 pt-5 text-center'>
                 <h1 className='heading-text' >Basic Projects</h1>
                 <hr className='heading-hr'></hr>
             </div>
 
-            <div className='container mt-5'>
-                <div className='row'>
-                    {projectsData.map((data) => {
-                        const { id, name, image, learn, link } = data;
-                        // setProject(name);
-                        // project = name;
+            <div className=" pt-4">
+                <div className='basic_project_container py-5 ' >
+                    <div className='container  ' >
+                        <div className='row'>
+                            {projectsData.map((data) => {
+                                const { id, name, image, learn, link } = data;
+                                // setProject(name);
+                                // project = name;
 
-                        return (
-                            <div key={id} className='col-md-6 col-lg-4 project-size' >
-                                <Link className='link' to={{
-                                    pathname: link, state: {
-                                        project: "project"
-                                    }
-                                }}>
-                                    <div className='project-block' >
-                                        {/* <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif', fontWeight: '900' }}>{name}</h5> */}
-                                        <img className='pro-image' src={image} alt=""></img>
-                                        <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontWeight: '650', fontSize: '1.15rem' }}>{name}</h5>
+                                return (
+                                    <div key={id} className='col-md-6 col-lg-4 project-size' >
+                                        <Link className='link' to={{
+                                            pathname: link, state: {
+                                                project: "project"
+                                            }
+                                        }}>
+                                            <div className='project-block' >
+                                                {/* <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif', fontWeight: '900' }}>{name}</h5> */}
+                                                <img className='pro-image' src={image} alt=""></img>
+                                                <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontWeight: '650', fontSize: '1.15rem' }}>{name}</h5>
 
-                                        {/* <h6 className='py-3 my-0' style={{ letterSpacing: '1px', color: '#617d98', fontWeight: '700' }}>{name}</h6> */}
+                                                {/* <h6 className='py-3 my-0' style={{ letterSpacing: '1px', color: '#617d98', fontWeight: '700' }}>{name}</h6> */}
+                                            </div>
+                                        </Link>
                                     </div>
-                                </Link>
-                            </div>
 
-                        )
-                    })}
+                                )
+                            })}
+                        </div>
+                    </div>
                 </div>
+
             </div>
 
             <div className='footer'>
