@@ -1,15 +1,12 @@
 import React from 'react'
 
 function Navbar() {
+
     return (
         <div>
             <header>
-                {/* <div className="bg-warning py-2">
-                    <div className="container">
-                        Some top header info
-	</div>
-                </div> */}
-                <nav id="navbar_top" className="navbar navbar-expand-lg navbar-dark bg-primary " >
+
+                <nav id="navbar_top" className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary " >
                     <div className="container">
                         <a className="navbar-brand" href="#">ReactMania</a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
