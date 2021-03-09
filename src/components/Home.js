@@ -34,11 +34,11 @@ function Home() {
                 <div className='container-fluid'>
                     <div className='row '>
                         <div className='col-12 col-md-6 vertical-center header-sections image-overlay'>
-                            <img className='header-image pt-2' src='/assets/image.png'></img>
+                            <img className='header-image pt-5' src='/assets/image.png'></img>
                             {/* <img className='header-image pt-5' src={logo}></img> */}
 
                         </div>
-                        <div className='col-12 col-md-6 vertical-center header-sections'>
+                        <div className='col-12 col-md-6 vertical-center header-sections pb-5'>
                             <div>
 
 
@@ -62,7 +62,7 @@ function Home() {
                     <span className='letter-anim transition'>s</span> */}
 
 
-                                    <span className='letter-anim transition big-letter'>L</span>
+                                    <span className='letter-anim transition'>L</span>
                                     <span className='letter-anim transition'>e</span>
                                     <span className='letter-anim transition'>t</span>
                                     <span className='letter-anim transition'>'</span>
@@ -70,11 +70,11 @@ function Home() {
                                     <span> </span>
 
 
-                                    <span className='letter-anim transition big-lette'>D</span>
+                                    <span className='letter-anim transition'>D</span>
                                     <span className='letter-anim transition'>o</span>
                                     <span> </span>
 
-                                    <span className='letter-anim transition big-lette'>I</span>
+                                    <span className='letter-anim transition'>I</span>
                                     <span className='letter-anim transition'>t</span>
                                     <span className='letter-anim transition big-letter'>!</span>
 
@@ -83,7 +83,7 @@ function Home() {
 
 
                                 </h1>
-                                <p className='w-100 header-small-text pt-2'>ReactMania is a pool of small to big web projects using ReactJs framework </p>
+                                <p className='w-100 header-small-text text-center px-5 pt-2'>ReactMania is a pool of small to big web projects using ReactJs framework </p>
                             </div>
                         </div>
 
