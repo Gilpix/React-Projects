@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import GithubUsers from "./components/GithubUsers/User";
 import SubscriptionList from "./components/SubscriptionList/SubscriptionList";
+import Navbar from "./components/SharedComp/Navbar";
 
 
 import BirthdayReminder from "./components/BirthdayReminder/BirthdayReminder.js";
@@ -16,6 +17,8 @@ import BirthdayReminder from "./components/BirthdayReminder/BirthdayReminder.js"
 function App() {
   return (
     <div className="App">
+      <Navbar></Navbar>
+
       <Router>
         <Switch>
           <Route path="/" exact component={() => <Home />} />
