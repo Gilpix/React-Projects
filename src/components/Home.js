@@ -16,9 +16,9 @@ function Home() {
     // const [project, setProject] = React.useState('hhhh');
 
     return (
-        <div className='basic_project_containe '>
+        <div className=' px-0'>
 
-            <div className='header area'>
+            <div className='header area '>
                 <ul className="circles">
                     <li></li>
                     <li></li>
@@ -31,9 +31,19 @@ function Home() {
                     <li></li>
                     <li></li>
                 </ul>
+                <div className='container-fluid'>
+                    <div className='row '>
+                        <div className='col-12 col-md-6 vertical-center header-sections image-overlay'>
+                            <img className='header-image pt-2' src='/assets/image.png'></img>
+                            {/* <img className='header-image pt-5' src={logo}></img> */}
 
-                <h1 className='header-text'>
-                    {/* 
+                        </div>
+                        <div className='col-12 col-md-6 vertical-center header-sections'>
+                            <div>
+
+
+                                <h1 className='header-text w-100'>
+                                    {/* 
                     <span className='letter-anim transition big-letter'>R</span>
                     <span className='letter-anim transition'>e</span>
                     <span className='letter-anim transition'>a</span>
@@ -52,27 +62,35 @@ function Home() {
                     <span className='letter-anim transition'>s</span> */}
 
 
-                    <span className='letter-anim transition big-letter'>L</span>
-                    <span className='letter-anim transition'>e</span>
-                    <span className='letter-anim transition'>t</span>
-                    <span className='letter-anim transition'>'</span>
-                    <span className='letter-anim transition'>s</span>
-                    <span> </span>
+                                    <span className='letter-anim transition big-letter'>L</span>
+                                    <span className='letter-anim transition'>e</span>
+                                    <span className='letter-anim transition'>t</span>
+                                    <span className='letter-anim transition'>'</span>
+                                    <span className='letter-anim transition'>s</span>
+                                    <span> </span>
 
 
-                    <span className='letter-anim transition big-lette'>D</span>
-                    <span className='letter-anim transition'>o</span>
-                    <span> </span>
+                                    <span className='letter-anim transition big-lette'>D</span>
+                                    <span className='letter-anim transition'>o</span>
+                                    <span> </span>
 
-                    <span className='letter-anim transition big-lette'>I</span>
-                    <span className='letter-anim transition'>t</span>
-                    <span className='letter-anim transition big-letter'>!</span>
-
-
+                                    <span className='letter-anim transition big-lette'>I</span>
+                                    <span className='letter-anim transition'>t</span>
+                                    <span className='letter-anim transition big-letter'>!</span>
 
 
 
-                </h1>
+
+
+                                </h1>
+                                <p className='w-100 header-small-text pt-2'>ReactMania is a pool of small to big web projects using ReactJs framework </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
 
                 <div className="social-icons-div">
                     <div style={{ margin: '0 auto' }}>

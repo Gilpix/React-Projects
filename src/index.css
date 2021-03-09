@@ -88,6 +88,13 @@ code {
   padding-left: 3px;
 }
 
+.vertical-center {
+  z-index: 99 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 
@@ -105,7 +112,7 @@ code {
 /* #################### */
 
 .header {
-  height: 30vh;
+  height: 90vh;
   width: 100%;
   /* background-color: #222; */
   /* background-color: #ba8b57; */
@@ -116,11 +123,26 @@ code {
   place-items: center;
   /* border-bottom-left-radius: 160px;
   border-top-right-radius: 160px; */
-  max-height: 270px;
+  max-height: 90vh;
   position: relative;
   padding-bottom: 5vh;
 }
+.header-sections {
+  padding-top: 5%;
+  min-height: 50vh;
+  max-height: 90vh;
+  width: auto;
+  overflow-y: hidden;
+}
 
+.image-overlay {
+  background: var(--mainColor);
+  /* background: rgba(255, 255, 255, 0.7); */
+  opacity: 0.7;
+  overflow: hidden;
+  /* height: 100%; */
+  z-index: 9900;
+}
 .header-text {
   font-size: 3rem;
   color: var(--mainTextColor);
@@ -129,13 +151,25 @@ code {
   font-family: monospace;
   letter-spacing: 6px !important;
   text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: Oswald, sans-serif;
   z-index: 99 !important;
+}
+.header-small-text {
+  font-size: medium;
+  color: var(--blueLight);
+  text-align: justify;
+  text-justify: inter-word;
 }
 /* .App-logo {
   height: 5rem;
   color: #fff;
 } */
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .big-letter {
   font-size: 4.3rem;
@@ -259,11 +293,12 @@ code {
   /* For mobile phones: */
 
   .header {
-    height: 25vh;
+    height: 95vh;
     /* border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px; */
     border-top-right-radius: 0px;
     padding-bottom: 1%;
+    max-height: 95vh;
   }
 
   .header-text {
@@ -271,6 +306,19 @@ code {
     line-height: 2rem;
     margin-bottom: 20px;
     letter-spacing: 4px !important;
+  }
+
+  /* .header-image {
+    padding: 100px;
+  } */
+  .header-sections {
+    min-height: 40vh;
+    max-height: 45vh;
+  }
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .letter-anim:hover {
