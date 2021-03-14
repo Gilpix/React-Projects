@@ -13,6 +13,7 @@ import Navbar from "./components/SharedComp/Navbar";
 
 
 import BirthdayReminder from "./components/BirthdayReminder/BirthdayReminder.js";
+import NumberCruncher from './components/NumberCruncher/NumberCruncher';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/birthday" exact component={() => <BirthdayReminder />} />
           <Route path="/github" exact component={() => <GithubUsers />} />
           <Route path="/subscribe" exact component={() => <SubscriptionList />} />
+          <Route path="/calci" exact component={() => <NumberCruncher />} />
         </Switch>
         {/* <Footer /> */}
       </Router>
