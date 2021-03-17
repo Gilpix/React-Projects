@@ -57,6 +57,7 @@ function NumberCruncher() {
                 <div className='row w-100'>
                     <div style={{}} className='col-12 my-auto' >
                         <p style={{ minHeight: '25px' }}>
+                            <Modal isModalOpen={state.isModalOpen}></Modal>
                         </p>
 
                     </div>
