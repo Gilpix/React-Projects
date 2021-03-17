@@ -627,7 +627,9 @@ code {
     font-size: 2.3rem !important;
   }
 }
-/* ############################### */
+/* #################### */
+/* HOME Page HEADER CSS */
+/* #################### */
 
 .area {
   background: #4e54c8;
@@ -742,5 +744,75 @@ code {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+  }
+}
+
+/* #################### */
+/* Number Cruncher  CSS */
+/* #################### */
+
+.cruncher-container {
+  min-height: 50vh;
+  position: relative;
+
+  /* border: 3px solid green; */
+}
+.vertical-center-cruncher {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.plus {
+  text-align: end;
+}
+
+.minus {
+  text-align: left !important;
+}
+
+.counter-text {
+  font-size: 10rem;
+  color: var(--mainColor);
+  font-weight: 700;
+  text-shadow: 0px 1px 2px var(--mainColor);
+}
+
+.cruncher-icon {
+  color: var(--mainColor);
+  text-shadow: 0px 5px 0px transparent;
+  padding: 0px 5px;
+  border-radius: 15px;
+  transition-property: all;
+  transition-duration: 0.07s;
+  transition-delay: 0s;
+}
+
+.cruncher-icon:hover {
+  color: var(--mainColor);
+  background-color: var(--mainTextColor);
+}
+.cruncher-error-text {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .minus,
+  .plus {
+    text-align: center !important;
+  }
+  .cruncher-icon:hover {
+    color: var(--mainColor);
+    background-color: transparent;
+  }
+  .cruncher-icon:active {
+    color: var(--mainColor);
+    background-color: var(--mainTextColor);
+  }
+
+  .counter-text {
+    font-size: 8rem;
   }
 }
