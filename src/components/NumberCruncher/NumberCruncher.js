@@ -9,6 +9,7 @@ const initialState = {
 }
 
 function reducer(state, action) {
+    PlaySound();
 
     switch (action.type) {
         case 'INCREMENT':
@@ -22,6 +23,11 @@ function reducer(state, action) {
         default:
             throw new Error();
     }
+}
+
+function PlaySound() {
+    var sound = document.getElementById("audio");
+    sound.play()
 }
 
 
@@ -52,6 +58,7 @@ function NumberCruncher() {
     return (
         <>
             <Header heading='Number Cruncher'></Header>
+
             <div className='container cruncher-container vertical-center  text-center py-5'>
                 {/* <div className='vertical-center-cruncher  h-100' style> */}
                 <div className='row w-100'>
@@ -76,6 +83,7 @@ function NumberCruncher() {
                 {/* </div> */}
 
             </div>
+            <audio id="audio" src="https://www.soundjay.com/button/sounds/button-25.mp3" autostart="false" ></audio>
 
         </>
     )
