@@ -816,3 +816,17 @@ code {
     font-size: 8rem;
   }
 }
+
+/* #################### */
+/* Movies World  CSS */
+/* #################### */
+.imdb-movie-image {
+  /* min-width: 400px; */
+  width: 100%;
+  padding: 5px;
+}
+
+.imdb-movie-image:hover {
+  /* padding: 2px; */
+  transform: scale(1.05);
+}
