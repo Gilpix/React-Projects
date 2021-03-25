@@ -7,9 +7,9 @@ export const useFetch = (url) => {
     const getData = async () => {
 
         const response = await fetch(url);
-        const data = await response.json();
+        const dataJSON = await response.json();
 
-        setData(data);
+        setData(dataJSON.items);
 
     }
 
