@@ -14,6 +14,8 @@ import Navbar from "./components/SharedComp/Navbar";
 
 import BirthdayReminder from "./components/BirthdayReminder/BirthdayReminder.js";
 import NumberCruncher from './components/NumberCruncher/NumberCruncher';
+import MoviesWorld from './components/MoviesWorld/MoviesWorld';
+
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
           <Route path="/github" exact component={() => <GithubUsers />} />
           <Route path="/subscribe" exact component={() => <SubscriptionList />} />
           <Route path="/calci" exact component={() => <NumberCruncher />} />
+          <Route path="/movies" exact component={() => <MoviesWorld />} />
         </Switch>
         {/* <Footer /> */}
       </Router>
