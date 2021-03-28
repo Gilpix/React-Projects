@@ -21,10 +21,10 @@ function BirthdayReminder() {
         }
     }
 
-    document.body.style = 'background: rgba(204, 173, 116, .8)'
+    // document.body.style = 'background: rgba(204, 173, 116, .8)'
 
     return (
-        <>
+        <div className='projects-main-div'>
             <Header heading='Birthday Reminder'></Header>
 
             <div >
@@ -40,7 +40,7 @@ function BirthdayReminder() {
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

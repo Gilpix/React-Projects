@@ -10,7 +10,7 @@ import Header from '../SharedComp/Header';
 const url = "https://api.github.com/users"
 
 function User(props) {
-    document.body.style = 'background: #C1CDC1'
+    // document.body.style = 'background: #C1CDC1'
 
 
     // console.log("here : " + JSON.stringify(props))
@@ -43,7 +43,7 @@ function User(props) {
 
 
     return (
-        <>
+        <div className='projects-main-div'>
             <Header heading='Github Users'></Header>
 
 
@@ -70,7 +70,7 @@ function User(props) {
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }
 

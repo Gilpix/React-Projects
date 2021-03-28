@@ -33,7 +33,7 @@ function PlaySound() {
 
 
 function NumberCruncher() {
-    document.body.style = 'background:  #3a9da7';
+    // document.body.style = 'background:  #3a9da7';
 
 
 
@@ -56,7 +56,7 @@ function NumberCruncher() {
 
 
     return (
-        <>
+        <div className='projects-main-div'>
             <Header heading='Number Cruncher'></Header>
 
             <div className='container cruncher-container vertical-center  text-center py-5'>
@@ -85,7 +85,7 @@ function NumberCruncher() {
             </div>
             <audio id="audio" src="https://www.soundjay.com/button/sounds/button-25.mp3" autostart="false" ></audio>
 
-        </>
+        </div>
     )
 }
 

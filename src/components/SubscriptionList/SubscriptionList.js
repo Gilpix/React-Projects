@@ -3,7 +3,7 @@ import Header from '../SharedComp/Header';
 
 
 function SubscriptionList() {
-    document.body.style = 'background: rgba(104,151,187, 1)';
+    // document.body.style = 'background: rgba(104,151,187, 1)';
 
     const demoData = [
         { name: 'Kuldeep Singh', email: 'kulsinggh@gmail.com', mobile: '5142938765' },
@@ -41,7 +41,7 @@ function SubscriptionList() {
 
 
     return (
-        <>
+        <div className='projects-main-div'>
 
 
             <Header heading='SubscriptionS'></Header>
@@ -105,7 +105,7 @@ function SubscriptionList() {
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }
 
