@@ -2,6 +2,7 @@
   --mainColor: #4e54c8;
   --mainTextColor: rgb(255, 255, 255);
   --blueLight: rgb(178, 185, 241);
+  --heading: rgb(226, 228, 245);
   /* --mainTextColor: rgb(241, 241, 241); */
   /* --blueLight: rgb(178, 185, 241); */
 
@@ -60,10 +61,19 @@ code {
   letter-spacing: 1px;
   border-bottom: 2px solid transparent;
   font-weight: 700;
-  font-family: "Merienda", cursive;
-  /* font-family: 'Concert One', cursive; */
-
+  /* font-family: "Merienda", cursive; */
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
+  height: 60px;
+}
+
+#logo {
+  background-position: center;
+  height: 100%;
+  width: auto;
+  background-color: transparent !important;
+  transform: scale(3);
+  padding-left: 10px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -87,6 +97,12 @@ code {
 
   .navbar-dark .navbar-brand {
     font-size: 1.5rem;
+    height: 52px;
+  }
+
+  #logo {
+    transform: scale(2.5);
+    padding-left: 10px;
   }
 }
 /* #################### */
@@ -105,13 +121,22 @@ code {
 
 .back-button:hover {
   color: white;
-  text-shadow: 0 0 2px rgba(65, 63, 63, 0.7);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
   text-decoration: none;
 }
 .back-text {
   font-size: 1.1rem !important;
-  color: white;
+  color: var(--heading);
   padding-left: 3px;
+}
+
+.fa-chevron-left {
+  color: var(--heading);
+  margin-left: 5px;
+}
+.fa-chevron-left:hover {
+  margin-left: 0px;
+  margin-right: 5px;
 }
 
 .vertical-center {
@@ -119,6 +144,11 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.projects-main-div {
+  background-color: #eeeffc;
+  min-height: 100vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -129,7 +159,7 @@ code {
     line-height: 1rem;
   }
   .back-text {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
 }
 
@@ -160,7 +190,9 @@ code {
   width: auto;
   overflow-y: hidden;
 }
-
+.header-main-div {
+  height: 250px;
+}
 .image-overlay {
   background: var(--mainColor);
   /* background: rgba(255, 255, 255, 0.7); */
@@ -294,20 +326,22 @@ code {
 }
 
 .heading-text {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   padding-top: 100px;
   /* color: #222; */
   /* color: var(--mainColor); */
-  color: #fff;
+  color: var(--heading);
   /* color: rgb(22, 21, 21); */
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 900;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "Concert One", cursive;
+  font-weight: 500;
+  letter-spacing: 1.5px;
 }
 
 .heading-hr {
-  border: 1px solid rgb(222, 223, 224);
-  border-radius: 30%;
-  width: 20%;
+  border: 2px solid var(--heading);
+  border-radius: 5px;
+  width: 10%;
   margin: 0 auto;
 }
 
@@ -342,6 +376,10 @@ code {
     /* line-height: 3.5rem; */
     /* margin-bottom: 20px; */
     letter-spacing: 4px !important;
+  }
+  .header-main-div {
+    height: 200px;
+    padding-top: 40px !important;
   }
 
   /* .header-image {
@@ -385,15 +423,16 @@ code {
   }
 
   .heading-text {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     padding-top: 50px;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: 900;
+    /* font-family: "Courier New", Courier, monospace; */
+    font-weight: 550;
+    letter-spacing: 1px;
   }
 
   .heading-hr {
-    border-radius: 40%;
-    width: 50%;
+    border-radius: 5px;
+    width: 20%;
   }
 }
 /* #################### */
@@ -821,12 +860,17 @@ code {
 /* Movies World  CSS */
 /* #################### */
 .imdb-movie-image {
-  /* min-width: 400px; */
   width: 100%;
-  padding: 5px;
+  padding: 1.5px;
 }
 
 .imdb-movie-image:hover {
-  /* padding: 2px; */
-  transform: scale(1.05);
+  transform: scale(0.95);
+}
+.image-div {
+  background-color: transparent;
+}
+
+.image-div:hover {
+  background-color: transparent;
 }
