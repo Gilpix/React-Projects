@@ -272,44 +272,115 @@ code {
 }
 
 .project-size {
-  padding: 15px 5px;
+  /* padding: 15px 5px; */
   transition-property: all;
   transition-duration: 0.4s;
   transition-delay: 0.05s;
+  transform: scale(0.95);
+  /* transform: rotate(10deg); */
+  padding: 15px;
+  /* background: linear-gradient(
+      rgba(255, 255, 255, 0.0973),
+      rgba(255, 255, 255, 0.0373)
+    ),
+    url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg) !important;
+
+  object-fit: contain; */
+  border-radius: 20%;
 }
 .project-size:hover {
   /* padding: 5px; */
-  padding: 11px 2px;
+  /* padding: 11px 2px; */
+  transform: scale(1.051);
+  /* transform: rotate(-0deg); */
+  /* z-index: 99; */
 }
 .project-block {
   background-color: transparent;
-  box-shadow: 0px 0px 15px rgba(119, 124, 124, 0.05);
+  /* box-shadow: -1px -1px 5px rgba(119, 124, 124, 0.3); */
   /* border-top: 2px solid transparent; */
-  border-bottom: 2px solid transparent;
-  margin: 10px;
+  /* border-bottom: 2px solid transparent; */
+  /* margin: 10px; */
   transition-property: all;
   transition-duration: 0.3s;
   transition-delay: 0.05s;
-  /* border-radius: 45px; */
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 3%;
+  /* border-top-right-radius: 50%; */
+  /* border-top-left-radius: 100%; */
+  /* border-bottom-left-radius: 0%; */
+  /* border-bottom-right-radius: 100%; */
   overflow: hidden;
+  /* color: #617d98; */
+  color: #617d98;
   /* border: 1px solid transparent; */
+  /* background: linear-gradient(#7171c6, #7171c6); */
+  /* border: none !important; */
+
+  max-height: 240px;
+  min-height: 240px;
+  width: 100%;
+
+  /* border-top: 5px solid #5b55bd; */
+  /* border-left: 5px solid #5b55bd; */
+  /* border-bottom: 5px solid #cbcaec; */
+
+  /* background: linear-gradient(
+      rgba(255, 255, 255, 0.775),
+      rgba(255, 255, 255, 0.373)
+    ),
+    url(https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2018/06/C421_gradients.jpg) !important;
+
+  object-fit: contain; */
+
+  background: linear-gradient(
+    150.5deg,
+    rgba(233, 229, 255, 0.5),
+    50%,
+    rgba(91, 85, 189, 1) 50%
+  );
+
+  /* background: -webkit-linear-gradient(
+      150.5deg,
+      #5b55bd 33%,
+      rgba(0, 0, 0, 0) 33%
+    ),
+    -webkit-linear-gradient(150.5deg, #d1d0ec 66%, #5b55bd 66%);
+     */
+  /* 
+  background: -o-linear-gradient(150.5deg, #5b55bd 33%, rgba(0, 0, 0, 0) 33%),
+    -o-linear-gradient(150.5deg, #d1d0ec 66%, #5b55bd 66%);
+
+  background: -moz-linear-gradient(150.5deg, #5b55bd 33%, rgba(0, 0, 0, 0) 33%),
+    -moz-linear-gradient(150.5deg, #d1d0ec 66%, #5b55bd 66%); */
+
+  /*     
+  background: linear-gradient(150.5deg, #5b55bd 30%, rgba(0, 0, 0, 0) 30%),
+    linear-gradient(150.5deg, #d1d0ec 55%, #5b55bd 55%); */
 }
 
 .project-block:hover {
   /* box-shadow: 0px 0px 20px #138f6a; */
-  box-shadow: 0px 5px 15px rgba(73, 51, 35, 0.3);
+  /* border-bottom: 5px solid #5b55bd; */
+  /* border-top: 5px solid #cbcaec; */
+
+  box-shadow: 0px 5px 15px rgba(73, 51, 35, 0.5);
+  /* border: 5px solid var(--mainColor); */
+
   /* border: 1px solid rgba(151, 172, 172, 0.9); */
   /* border-top: 2px solid rgba(73, 51, 35, 0.7); */
   /* border-bottom: 3px solid rgba(73, 51, 35, 0.7); */
   /* border-bottom-left-radius: 45px;
   border-bottom-right-radius: 45px; */
   /* border-radius: 45px; */
+  /* border-top-left-radius: 00%; */
+  /* border-bottom-right-radius: 0%; */
 
-  /* margin: 10px 8px; */
+  margin: 0;
+  /* background-color: var(--mainColor); */
+  /* color: #cbcaec !important; */
+  color: #5b55bd;
+
+  background: linear-gradient(150.5deg, #5b55bd 50%, #e9e5ff 50%);
 }
 
 .pro-image {
@@ -318,6 +389,30 @@ code {
   width: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
+  border: none !important;
+}
+
+.lbl {
+  /* width: 80px; */
+  float: left;
+  margin-left: 5px;
+  /* padding-left: 50px; */
+  transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg); /* IE 9 */
+  -webkit-transform: rotate(-30deg); /* Opera, Chrome, and Safari */
+  /* background-color: var(--blueLight); */
+
+  /* background: linear-gradient(
+      rgba(255, 255, 255, 0.775),
+      rgba(255, 255, 255, 0.373)
+    ),
+    url(https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2018/06/C421_gradients.jpg) !important;
+
+  object-fit: contain; */
+}
+.inp {
+  float: left;
+  margin-top: 150px;
 }
 
 .home-heading-text {
@@ -331,7 +426,7 @@ code {
   /* color: #222; */
   /* color: var(--mainColor); */
   color: var(--heading);
-  /* color: rgb(22, 21, 21); */
+  /* color: #617d98; */
   /* font-family: "Courier New", Courier, monospace; */
   font-family: "Concert One", cursive;
   font-weight: 500;
@@ -346,17 +441,18 @@ code {
 }
 
 .basic_project_container {
-  background-color: rgba(97, 125, 152, 0.081);
+  background-color: #f5f5fa;
   background-repeat: no-repeat !important;
   background-size: 100% 100%;
+  position: relative;
 
   /* background: linear-gradient(
-      rgba(255, 255, 255, 0.775),
-      rgba(255, 255, 255, 0.373)
+      rgba(255, 255, 255, 0.0973),
+      rgba(255, 255, 255, 0.0373)
     ),
-    url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/p-448-pai-654.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=d163cc5998481eae9699de0794e87024) !important; */
+    url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/p-448-pai-654.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=d163cc5998481eae9699de0794e87024) !important;
 
-  /* object-fit: contain; */
+  object-fit: contain; */
 }
 
 @media only screen and (max-width: 768px) {
@@ -413,9 +509,9 @@ code {
     padding: 5px !important;
   }
 
-  .project-block {
+  /* .project-block {
     margin: 10px;
-  }
+  } */
 
   .pro-image {
     max-height: 210px;
@@ -433,6 +529,24 @@ code {
   .heading-hr {
     border-radius: 5px;
     width: 20%;
+  }
+
+  .project-size {
+    padding: 15px 5px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-delay: 0.05s;
+    transform: scale(1);
+    /* transform: rotate(10deg); */
+    padding: 15px 5px;
+  }
+  .project-size:hover {
+    /* padding: 5px; */
+    /* padding: 11px 2px; */
+    transform: scale(1);
+    /* transform: rotate(-0deg); */
+    /* z-index: 99999; */
+    box-shadow: none;
   }
 }
 /* #################### */

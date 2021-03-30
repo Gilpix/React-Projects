@@ -114,31 +114,37 @@ function Home() {
 
                 <div className=" pt-4">
                     <div className='basic_project_container py-5 ' >
-                        <div className='container  ' >
-                            <div className='row'>
-                                {projectsData.map((data) => {
-                                    const { id, name, image, learn, link } = data;
-                                    // setProject(name);
-                                    // project = name;
+                        <div className='container-fluid ' >
 
-                                    return (
-                                        <div key={id} className='col-md-6 col-lg-4 project-size' >
-                                            <Link className='link' to={{
-                                                pathname: link, state: {
-                                                    project: "project"
-                                                }
-                                            }}>
-                                                <div className='project-block' >
-                                                    {/* <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif', fontWeight: '900' }}>{name}</h5> */}
-                                                    <img className='pro-image' src={image} alt=""></img>
-                                                    <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontWeight: '650', fontSize: '1.15rem' }}>{name}</h5>
+                            <div className='container  '  >
 
-                                                    {/* <h6 className='py-3 my-0' style={{ letterSpacing: '1px', color: '#617d98', fontWeight: '700' }}>{name}</h6> */}
-                                                </div>
-                                            </Link>
-                                        </div>
-                                    )
-                                })}
+                                <div className='row' >
+                                    {projectsData.map((data) => {
+                                        const { id, name, image, learn, link } = data;
+                                        // setProject(name);
+                                        // project = name;
+
+                                        return (
+                                            <div key={id} className='col-md-6 col-sm-6 col-lg-4 project-size' >
+                                                <Link className='link' to={{
+                                                    pathname: link, state: {
+                                                        project: "project"
+                                                    }
+                                                }}>
+                                                    <div className='project-block' >
+                                                        <div className='lbl w-100 h-100'>
+                                                            {/* <h5 className='py-3 my-0' style={{ color: '#617d98', letterSpacing: '1px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif', fontWeight: '900' }}>{name}</h5> */}
+                                                            {/* <img className='pro-image' alt=""></img> */}
+                                                            <h5 className='py-3   ' style={{ letterSpacing: '.5px', border: 'none !important', fontWeight: '650', fontSize: '1.45rem', marginLeft: '-100px', marginTop: '35px' }}>{name}</h5>
+
+                                                            <h6 className='py-4 my-0' style={{ letterSpacing: '1px', color: '#5b55bd', fontWeight: '500', marginLeft: '-100px', marginTop: '45px' }}>{learn}</h6>
+                                                        </div>
+                                                    </div>
+                                                </Link>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
                             </div>
                         </div>
                     </div>
