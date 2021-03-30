@@ -46,7 +46,7 @@ function SubscriptionList() {
 
             <Header heading='SubscriptionS'></Header>
 
-            <div className="container pt-3">
+            <div className="container pt-5">
                 <h5 className='text-subscribe'>Total Subscriptions : {people.length}</h5>
                 <p className='text-subscribe-small'>Please click below to subscribe to our newsletter.</p>
                 <button className=' want-to-subscribe ' data-toggle="modal" data-target="#exampleModalCenter">Subscribe To List</button>
