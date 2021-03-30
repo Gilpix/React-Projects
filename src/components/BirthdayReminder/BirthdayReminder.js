@@ -27,19 +27,19 @@ function BirthdayReminder() {
         <div className='projects-main-div'>
             <Header heading='Birthday Reminder'></Header>
 
-            <div >
-                <div className='container' >
+            {/* <div > */}
+            <div className='container py-2' >
 
-                    <section className='birthday-section'>
-                        {singleUser.map((user) => {
-                            return <div key={user.id}><User user={user} ></User></div>;
-                        })}
-                        <button className='btn btn-sm btn-danger' onClick={clickHandler}>{isEmpty}</button>
+                <section className='birthday-section'>
+                    {singleUser.map((user) => {
+                        return <div key={user.id}><User user={user} ></User></div>;
+                    })}
+                    <button className='btn btn-sm btn-danger' onClick={clickHandler}>{isEmpty}</button>
 
-                    </section>
+                </section>
 
-                </div>
             </div>
+            {/* </div> */}
         </div>
     )
 }
