@@ -7,7 +7,7 @@
   --mainTextColor: rgb(255, 255, 255);
   --blueLight: rgb(178, 185, 241);
   /* --heading: rgb(226, 228, 245); */
-  --heading: #c5d4e2;
+  --heading: rgb(97, 125, 152);
   --secondaryheading: #b8b5ff;
   /* --mainTextColor: rgb(241, 241, 241); */
   /* --blueLight: rgb(178, 185, 241); */
@@ -32,7 +32,6 @@ body {
 body {
   min-width: 100%;
   min-height: 100%;
-  /* background-color: rgba(3, 229, 245, 0.1); */
 }
 
 code {
@@ -132,12 +131,12 @@ code {
 }
 .back-text {
   font-size: 1.1rem !important;
-  color: var(--heading);
+  color: var(--mainTextColor);
   padding-left: 3px;
 }
 
 .fa-chevron-left {
-  color: var(--heading);
+  color: var(--mainTextColor);
   margin-left: 5px;
 }
 .fa-chevron-left:hover {
@@ -198,6 +197,7 @@ code {
 }
 .header-main-div {
   height: 250px;
+  background: var(--mainColor);
 }
 .image-overlay {
   background: var(--mainColor);
@@ -423,22 +423,23 @@ code {
 
 .home-heading-text {
   padding-top: 0px !important;
-  color: rgb(97, 125, 152) !important;
+  /* color: rgb(97, 125, 152) !important; */
+  color: var(--heading);
+
+  font-size: 2.5rem;
+  padding-top: 100px;
+  font-family: "Concert One", cursive;
+  font-weight: 500;
+  letter-spacing: 1.5px;
 }
 
 .heading-text {
   font-size: 2.5rem;
   padding-top: 100px;
-  /* color: #222; */
-  /* color: var(--mainColor); */
-  color: var(--heading);
-  /* color: #617d98; */
-  /* font-family: "Courier New", Courier, monospace; */
+  color: var(--mainTextColor);
   font-family: "Concert One", cursive;
   font-weight: 500;
   letter-spacing: 1.5px;
-  /* text-align: left; */
-  /* border-bottom: 2px solid red; */
 }
 
 .heading-hr {
@@ -463,6 +464,21 @@ code {
     var(--mainLightColor) 10% 50%,
     var(--mainColor) 50% 90%,
     var(--mainTextColor) 90%
+  );
+}
+
+.header-hr {
+  padding: 5px;
+  width: 55%;
+  color: #fff !important;
+  border: none;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    -130deg,
+    var(--mainColor) 10%,
+    var(--mainDarkColor) 10% 50%,
+    var(--mainLightColor) 50% 90%,
+    var(--mainColor) 90%
   );
 }
 

@@ -109,7 +109,7 @@ function Home() {
             {/* BASIC Projects Section */}
             <section id='basicProjects'>
                 <div className='col-12 col-md-6 col-lg-4 col-xl-4 my-5 pt-5 text-center'>
-                    <h1 className='heading-text home-heading-text px-3' >Basic Projects</h1>
+                    <h1 className='home-heading-text px-3' >Basic Projects</h1>
                     <hr className='heading-hr'></hr>
                 </div>
 

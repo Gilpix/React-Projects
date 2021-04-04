@@ -2,11 +2,11 @@ import React from 'react'
 
 function Header(props) {
     return (
-        <div className='pt-2 pb-3 header-main-div ' style={{ backgroundColor: "#fff", background: "linear-gradient(#4e54c8, #4e54c8)" }}>
+        <div className='pt-2 pb-3 header-main-div ' >
             <div className='containe'>
                 <div className='col-12'>
                     <h1 className='heading-text'  >{props.heading}</h1>
-                    <hr className='heading-hr'></hr>
+                    {/* <hr className='header-hr'></hr> */}
                 </div>
                 <div className='container mb-5 mt-4 pt-2'>
                     <div className='w-100 float-left ' style={{ textAlign: 'left' }}>
