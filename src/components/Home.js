@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from "react-router-dom";
 
+import Footer from "./SharedComp/Footer";
 
 import { projectsData } from ".././projectsData";
 
@@ -15,8 +16,8 @@ function Home() {
 
     // const [project, setProject] = React.useState('hhhh');
 
-    return (
-        <div className=' px-0'>
+    return (<>
+        <main className=' px-0'>
             <section id='home'>
 
                 <div className='header area '>
@@ -107,8 +108,8 @@ function Home() {
 
             {/* BASIC Projects Section */}
             <section id='basicProjects'>
-                <div className='my-5 pt-5 text-center'>
-                    <h1 className='heading-text home-heading-text ' >Basic Projects</h1>
+                <div className='col-12 col-md-6 col-lg-4 col-xl-4 my-5 pt-5 text-center'>
+                    <h1 className='heading-text home-heading-text px-3' >Basic Projects</h1>
                     <hr className='heading-hr'></hr>
                 </div>
 
@@ -118,7 +119,7 @@ function Home() {
 
                             <div className='container  '  >
 
-                                <div className='row' >
+                                <div className='row basic_project_inner_container' >
                                     {projectsData.map((data) => {
                                         const { id, name, image, learn, link } = data;
                                         // setProject(name);
@@ -151,11 +152,11 @@ function Home() {
                 </div>
             </section>
 
-            <div className='footer'>
-                <h5 className='footer-text'>Handcrafted by Kuldeep Singh</h5>
-            </div>
 
-        </div >
+
+        </main >
+        <Footer></Footer>
+    </>
     )
 }
 
