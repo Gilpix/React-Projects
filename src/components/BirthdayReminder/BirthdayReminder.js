@@ -34,7 +34,7 @@ function BirthdayReminder() {
                     {singleUser.map((user) => {
                         return <div key={user.id}><User user={user} ></User></div>;
                     })}
-                    <button className='btn btn-sm btn-danger' onClick={clickHandler}>{isEmpty}</button>
+                    <button className='btn btn-sm btn-secondary' onClick={clickHandler}>{isEmpty}</button>
 
                 </section>
 
