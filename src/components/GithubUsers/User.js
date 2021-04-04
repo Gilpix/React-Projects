@@ -43,34 +43,36 @@ function User(props) {
 
 
     return (
-        <div className='projects-main-div'>
-            <Header heading='Github Users'></Header>
+        <>
+            <div className='projects-main-div'>
+                <Header heading='Github Users'></Header>
 
 
-            <div className="container my-5 py-3">
-                <div className='row'>
-                    {
-                        users.map((user) => {
-                            const { login, id, avatar_url, html_url } = user;
-                            return (
-                                <div key={id} className='col-12 col-md-6 col-lg-4 '>
-                                    <div className='item m-2'>
-                                        <img src={avatar_url} alt=''></img>
-                                        <div className='ml-5 mt-1 pl-4'>
-                                            <p className="h5 mb-0 w-50" style={{ textTransform: "capitalize" }} >{login}</p>
-                                            <a href={html_url}>Check Profile</a>
+                <div className="container mt-5 pt-3 pb-5">
+                    <div className='row'>
+                        {
+                            users.map((user) => {
+                                const { login, id, avatar_url, html_url } = user;
+                                return (
+                                    <div key={id} className='col-12 col-md-6 col-lg-4 '>
+                                        <div className='item m-2'>
+                                            <img src={avatar_url} alt=''></img>
+                                            <div className='ml-5 mt-1 pl-4'>
+                                                <p className="h5 mb-0 w-50" style={{ textTransform: "capitalize" }} >{login}</p>
+                                                <a href={html_url}>Check Profile</a>
+                                            </div>
+
                                         </div>
 
                                     </div>
-
-                                </div>
-                            )
-                        })
-                    }
+                                )
+                            })
+                        }
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
+        </>
     )
 }
 
