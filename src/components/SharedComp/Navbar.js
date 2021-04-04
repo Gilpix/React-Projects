@@ -3,7 +3,7 @@ import React from 'react'
 function Navbar() {
 
     return (
-        <div>
+        <>
             <header>
 
                 <nav id="navbar_top" className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary " >
@@ -22,7 +22,7 @@ function Navbar() {
                 </nav>
             </header>
 
-        </div>
+        </>
     )
 }
 
