@@ -1136,3 +1136,111 @@ code {
   text-align: justify;
   font-weight: 250;
 }
+
+/* #################### */
+/* Curved Home  CSS */
+/* #################### */
+
+.curved {
+  position: relative;
+  padding-bottom: 0 !important;
+  border-bottom: 12px solid white;
+
+  background-image: linear-gradient(
+    -0deg,
+    transparent 1%,
+    var(--mainColor) 1% 50%,
+    var(--mainColor) 50% 99%,
+    transparent 99%
+  );
+}
+.curved-heading {
+  position: absolute;
+  top: -70px;
+
+  padding-top: 0px !important;
+  /* color: rgb(97, 125, 152) !important; */
+  color: var(--heading);
+
+  font-size: 2.5rem;
+  padding-top: 100px;
+  font-family: "Concert One", cursive;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.curved-heading-hr {
+  padding: 7px;
+  width: 65%;
+  color: #fff !important;
+  border: none;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    -130deg,
+    transparent 10%,
+    var(--mainDarkColor) 10% 50%,
+    var(--mainLightColor) 50% 90%,
+    transparent 90%
+  );
+}
+
+.curved-heading-hr:hover {
+  background-image: linear-gradient(
+    -130deg,
+    transparent 10%,
+    var(--mainLightColor) 10% 50%,
+    var(--mainDarkColor) 50% 90%,
+    transparent 90%
+  );
+}
+
+.curved svg {
+  display: block;
+  transform: scaleX(-1);
+}
+/* NEW SEC */
+
+.tech-img-background {
+  height: 200px;
+}
+.tech-img-background img {
+  max-height: 100px;
+  width: auto;
+  max-width: 100%;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0.03s;
+}
+
+.tech-img-background img:hover {
+  transform: scale(1.21);
+}
+
+.tech-img-background {
+  padding: 2%;
+}
+
+.tech-img-background h6 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .curved-heading {
+    position: absolute;
+    top: -120px;
+  }
+
+  .curved-heading-hr {
+    width: 65%;
+  }
+  .main-sec-curved img {
+    max-height: 100px;
+    width: auto;
+    max-width: 90%;
+  }
+
+  .tech-img-background {
+    padding: 3%;
+  }
+}
