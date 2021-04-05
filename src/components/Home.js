@@ -17,7 +17,7 @@ function Home() {
     // const [project, setProject] = React.useState('hhhh');
 
     return (<>
-        <main className=' px-0'>
+        <main className=' px-0 pb-4'>
             <section id='home'>
 
                 <div className='header area '>
@@ -104,6 +104,7 @@ function Home() {
 
                     </div>
                 </div>
+
             </section>
 
             {/* BASIC Projects Section */}
@@ -138,7 +139,7 @@ function Home() {
                                                             {/* <img className='pro-image' alt=""></img> */}
                                                             <h5 className='py-3   ' style={{ letterSpacing: '.5px', border: 'none !important', fontWeight: '650', fontSize: '1.45rem', marginLeft: '-100px', marginTop: '35px' }}>{name}</h5>
 
-                                                            <h6 className='py-4 my-0' style={{ letterSpacing: '1px', color: '#5b55bd', fontWeight: '500', marginLeft: '-100px', marginTop: '45px' }}>{learn}</h6>
+                                                            <h6 className='py-4 my-0' style={{ letterSpacing: '1px', color: 'rgba(120, 104, 230, 1)', fontWeight: '500', marginLeft: '-100px', marginTop: '45px' }}>{learn}</h6>
                                                         </div>
                                                     </div>
                                                 </Link>
@@ -151,6 +152,33 @@ function Home() {
                     </div>
                 </div>
             </section>
+
+
+            {/* Show Latest Project Section */}
+            <section id='latest-project-section' className='container my-5 py-3'>
+
+                <div className='row justify-content-en'>
+
+                    <div className='col-12 col-md-6 col-lg-4 col-xl-4 my-5 pt-5'>
+                        <h1 className='home-heading-text'>Latest Project</h1>
+                        <hr className='heading-hr'></hr>
+                    </div>
+                </div>
+
+                <div className='row align-items-center pb-5 mb-4'>
+
+                    <div className='col-12 col-md-6 order-2 py-2 order-md-1'>
+                        <div className=' vertical-center py-3'>
+                            <p className='latest-proj-text  p-2'>Fullstack web app (React, Express, NodeJS) providing a persistent search engine for searching any word from any type of text file(small or big file). It comprises two parts, a web-based user interface(using ReactJs) and a server component(using NodeJS) that exposes a REST API that provides search results retrieved from a corpus of text.</p>
+                        </div>
+                    </div>
+
+                    <div className='col-12 col-md-6 latest-proj-image-div py-2 order-1 order-md-2 '>
+                        <img src='/assets/search_engine.png'></img>
+                    </div>
+                </div>
+            </section>
+
 
 
 
