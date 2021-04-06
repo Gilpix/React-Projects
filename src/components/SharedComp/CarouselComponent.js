@@ -14,7 +14,7 @@ function CarouselComponent() {
                 <div className="row d-flex justify-content-center">
                     <div className="col-12 col-md-12 col-lg-9 col-xl-8">
                         <div className="card card-main border-0 text-center py-0 my-0">
-                            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="3000">
+                            <div id="carouselExampleIndicators" className="carousel slide mb-0" data-ride="carousel" data-interval="3000">
                                 <ol className="carousel-indicators">
                                     <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
                                     <li data-target="#carouselExampleIndicators" data-slide-to="1" className="active"></li>
@@ -36,7 +36,7 @@ function CarouselComponent() {
                                                     <div key={id} className="carousel-item active">
                                                         <div className='container'>
                                                             <div className='row'>
-                                                                <div className='col-12 mx-auto  tech-img-background'>
+                                                                <div className='col-12 mx-auto  tech-img-background pt-0'>
                                                                     <div>
                                                                         <img src={image}></img>
                                                                         <h6 className="mb-0 mt-4 mb-3">{name}</h6>
