@@ -8,7 +8,7 @@ function Footer() {
         <footer>
             <div className='footer'>
                 <div className='container-fluid py-2'>
-                    <i class="fa fa-eject fa-4x  wheelchair"></i>
+                    <i className="fa fa-eject fa-4x  wheelchair"></i>
 
                     <div className='row'>
                         <div className='col-12 col-md-4 py-3 order-1'>
@@ -28,7 +28,7 @@ function Footer() {
                         </div>
 
                         <div className='col-12 col-md-4 my-auto mail-to py-3 order-3'>
-                            <a class="mailto" href="mailto:kulsinggh@gmail.com">kulsinggh@gmail.com</a>
+                            <a className="mailto" href="mailto:kulsinggh@gmail.com">kulsinggh@gmail.com</a>
 
                         </div>
 
