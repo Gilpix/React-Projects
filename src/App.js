@@ -17,6 +17,9 @@ import NumberCruncher from './components/NumberCruncher/NumberCruncher';
 import MoviesWorld from './components/MoviesWorld/MoviesWorld';
 
 
+import Error from './components/SharedComp/Error';
+
+
 function App() {
   return (
     <div className="App">
@@ -25,11 +28,13 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={() => <Home />} />
-          <Route path="/birthday" exact component={() => <BirthdayReminder />} />
+          {/* <Route path="/birthday" exact component={() => <BirthdayReminder />} /> */}
+          <Route exact path="/birthday">  <BirthdayReminder /> </Route>
           <Route path="/github" exact component={() => <GithubUsers />} />
           <Route path="/subscribe" exact component={() => <SubscriptionList />} />
           <Route path="/calci" exact component={() => <NumberCruncher />} />
           <Route path="/movies" exact component={() => <MoviesWorld />} />
+          <Route path='*' ><Error /></Route>
         </Switch>
         {/* <Footer /> */}
       </Router>
