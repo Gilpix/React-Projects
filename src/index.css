@@ -1200,6 +1200,69 @@ code {
 }
 /* NEW SEC */
 
+@media only screen and (max-width: 768px) {
+  .curved-heading {
+    position: absolute;
+    top: -120px;
+  }
+
+  .curved-heading-hr {
+    width: 65%;
+  }
+}
+
+/* #################### */
+/* Carousel Home  CSS */
+/* #################### */
+
+.card-main {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.card-0 {
+  color: #fff;
+  background-color: var(--mainDarkColor);
+  background-color: transparent;
+  position: relative;
+  border-radius: 10px;
+}
+
+.carousel-indicators li {
+  cursor: pointer;
+  border-radius: 50% !important;
+  width: 10px;
+  height: 10px;
+}
+
+.profile {
+  color: #fff;
+  background-color: var(--mainDarkColor);
+  position: absolute;
+  border: transparent;
+  left: -70px;
+  top: 17%;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 180px;
+}
+
+.profile-pic {
+  max-height: 120px;
+  width: auto;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.content {
+  font-weight: 300;
+}
+
+.close-quotes {
+  margin-bottom: 100px;
+}
+
 .tech-img-background {
   height: 200px;
 }
@@ -1223,24 +1286,4 @@ code {
 .tech-img-background h6 {
   color: white;
   font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .curved-heading {
-    position: absolute;
-    top: -120px;
-  }
-
-  .curved-heading-hr {
-    width: 65%;
-  }
-  .main-sec-curved img {
-    max-height: 100px;
-    width: auto;
-    max-width: 90%;
-  }
-
-  .tech-img-background {
-    padding: 3%;
-  }
 }
