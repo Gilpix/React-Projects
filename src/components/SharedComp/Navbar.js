@@ -16,6 +16,8 @@ function Navbar() {
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item"><a className="nav-link" href="/#home"> Home </a></li>
                                 <li className="nav-item"><a className="nav-link" href="/#basicProjects"> Basic </a></li>
+                                <li className="nav-item"><a className="nav-link" href="/#latest-project-section"> Latest </a></li>
+                                <li className="nav-item"><a className="nav-link" href="/#curved-section"> Tech </a></li>
                             </ul>
                         </div>
                     </div>
