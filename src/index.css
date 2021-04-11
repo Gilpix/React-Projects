@@ -105,6 +105,15 @@ code {
   font-weight: 500;
 }
 
+.back-btn-div .fa-chevron-left {
+  padding-left: 5px !important;
+}
+
+.back-btn-div:hover .fa-chevron-left {
+  padding-left: 0px !important;
+  padding-right: 5px !important;
+}
+
 .back-button:hover {
   color: white;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
@@ -114,15 +123,6 @@ code {
   font-size: 1.1rem !important;
   color: var(--mainTextColor);
   padding-left: 3px;
-}
-
-.fa-chevron-left {
-  color: var(--mainTextColor);
-  margin-left: 5px;
-}
-.fa-chevron-left:hover {
-  margin-left: 0px;
-  margin-right: 5px;
 }
 
 .vertical-center {
