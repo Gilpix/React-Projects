@@ -480,11 +480,11 @@ code {
 
 .wheelchair {
   position: absolute;
-  top: -55px;
-  right: 30px;
+  top: -53px;
+  right: 20px;
   color: var(--mainColor);
-  transform: scale(1.15);
   margin: 0 auto;
+  font-size: 4rem !important;
 }
 
 .wheelchair:hover {
@@ -532,6 +532,12 @@ code {
   .footer-text {
     font-size: 1.1rem;
     font-weight: 500;
+  }
+
+  .wheelchair {
+    top: -38px;
+    right: 15px;
+    font-size: 3rem !important;
   }
 }
 

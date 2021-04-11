@@ -8,7 +8,7 @@ function Footer() {
         <footer>
             <div className='footer'>
                 <div className='container-fluid py-2'>
-                    <a href="/#"><i className="fa fa-eject fa-4x transition wheelchair"> </i></a>
+                    <a href="/#"><i className="fa fa-eject transition wheelchair"> </i></a>
 
                     <div className='row'>
                         <div className='col-12 col-md-4 py-3 order-1'>
