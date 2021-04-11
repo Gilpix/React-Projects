@@ -38,17 +38,17 @@ function CarouselComponent() {
                                                             <div className='row'>
                                                                 <div className='col-12 mx-auto  tech-img-background pt-0'>
                                                                     <div>
-                                                                        <img src={image}></img>
+                                                                        <img src={image} alt='React Mania'></img>
                                                                         <h6 className="mb-0 mt-4 mb-3">{name}</h6>
                                                                     </div>
                                                                 </div>
                                                                 <div className='col-12 col-md-10 col-xl-8 mx-auto  '>
                                                                     <div className="card border-0 card-0 ">
 
-                                                                        <img className="img-fluid open-quotes" src="https://i.imgur.com/Hp91vdT.png" width="20" height="20"></img>
+                                                                        <img className="img-fluid open-quotes" alt='React Mania' src="https://i.imgur.com/Hp91vdT.png" width="20" height="20"></img>
 
                                                                         <p className="content mb-0">{about}</p>
-                                                                        <img className="img-fluid close-quotes ml-auto" src="https://i.imgur.com/iPcHyJK.png" width="20" height="20"></img>
+                                                                        <img className="img-fluid close-quotes ml-auto" alt='React Mania' src="https://i.imgur.com/iPcHyJK.png" width="20" height="20"></img>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -65,17 +65,17 @@ function CarouselComponent() {
                                                             <div className='row'>
                                                                 <div className='col-12 mx-auto  tech-img-background'>
                                                                     <div>
-                                                                        <img src={image}></img>
+                                                                        <img src={image} alt='React Mania'></img>
                                                                         <h6 className="mb-0 mt-4 mb-3">{name}</h6>
                                                                     </div>
                                                                 </div>
                                                                 <div className='col-12 col-md-10 col-xl-8 mx-auto  '>
                                                                     <div className="card border-0 card-0 ">
 
-                                                                        <img className="img-fluid open-quotes" src="https://i.imgur.com/Hp91vdT.png" width="20" height="20"></img>
+                                                                        <img className="img-fluid open-quotes" alt='React Mania' src="https://i.imgur.com/Hp91vdT.png" width="20" height="20"></img>
 
                                                                         <p className="content mb-0">{about}</p>
-                                                                        <img className="img-fluid close-quotes ml-auto" src="https://i.imgur.com/iPcHyJK.png" width="20" height="20"></img>
+                                                                        <img className="img-fluid close-quotes ml-auto" alt='React Mania' src="https://i.imgur.com/iPcHyJK.png" width="20" height="20"></img>
                                                                     </div>
                                                                 </div>
                                                             </div>

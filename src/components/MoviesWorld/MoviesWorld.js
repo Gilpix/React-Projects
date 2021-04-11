@@ -21,7 +21,7 @@ function MoviesWorld() {
                         data.map((movie) => {
                             const { id, title, image, fullTitle, year } = movie;
                             return (<div key={id} className='col-6 col-sm-4 col-md-4 col-lg-2 transition p-0 image-div'>
-                                <img src={image} className='imdb-movie-image transition' ></img>
+                                <img src={image} className='imdb-movie-image transition' alt='React Mania' ></img>
                             </div>
                             );
                         })

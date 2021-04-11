@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
 
                     <div className='row'>
                         <div className='col-12 col-md-4 py-3 order-1'>
-                            <a className="footer-logo-div" href="/"><img id='footer-logo' src='assets/logo.png'></img> </a>
+                            <a className="footer-logo-div" href="/"><img id='footer-logo' src='assets/logo.png' alt='React Mania'></img> </a>
 
                         </div>
 

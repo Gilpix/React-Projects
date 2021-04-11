@@ -9,7 +9,7 @@ function User(props) {
                         <img
                             className="user-img"
                             src={props.user.image}
-                            alt=""
+                            alt='React Mania'
                         ></img>
                     </div>
                 </div>

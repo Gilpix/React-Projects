@@ -37,7 +37,7 @@ function Home() {
                     <div className='container-fluid'>
                         <div className='row '>
                             <div className='col-12 col-md-6 vertical-center header-sections image-overlay'>
-                                <img className='header-image pt-5' src='/assets/landing_page.png' alt='mane'></img>
+                                <img className='header-image pt-5' src='/assets/landing_page.png' alt=''></img>
 
                             </div>
                             <div className='col-12 col-md-6 vertical-center header-sections pb-5'>
@@ -174,7 +174,7 @@ function Home() {
                     </div>
 
                     <div className='col-12 col-md-6 latest-proj-image-div py-2 order-1 order-md-2 '>
-                        <img src='/assets/search_engine.png'></img>
+                        <img src='/assets/search_engine.png' alt='React Mania'></img>
                     </div>
                 </div>
             </section>

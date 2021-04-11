@@ -8,7 +8,7 @@ function Navbar() {
 
                 <nav id="navbar_top" className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary " >
                     <div className="container">
-                        <a className="navbar-brand" href="/"><img id='logo' src='assets/logo.png'></img> </a>
+                        <a className="navbar-brand" href="/"><img id='logo' src='assets/logo.png' alt='React Mania'></img> </a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
