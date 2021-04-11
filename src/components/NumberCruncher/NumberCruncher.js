@@ -47,7 +47,7 @@ function NumberCruncher() {
             else if (type === 'DECREMENT')
                 dispatch({ type: 'DECREMENT' })
         }
-        else if (state.count == 0 && type === 'INCREMENT')
+        else if (state.count === 0 && type === 'INCREMENT')
             dispatch({ type: 'INCREMENT' })
         else
             dispatch({ type: 'NEGATIVE' })
