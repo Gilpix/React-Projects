@@ -122,7 +122,7 @@ function Home() {
 
                                 <div className='row basic_project_inner_container' >
                                     {projectsData.map((data) => {
-                                        const { id, name, image, learn, link } = data;
+                                        const { id, name, learn, link } = data;
                                         // setProject(name);
                                         // project = name;
 
