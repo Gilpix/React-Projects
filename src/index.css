@@ -460,6 +460,10 @@ code {
     transform: scale(1);
     box-shadow: none;
   }
+
+  .image-overlay {
+    background: transparent;
+  }
 }
 /* #################### */
 /* FOOTER */
